@@ -1,0 +1,27 @@
+### Partes interesadas
+- Cliente - RF_Cliente_XX:
+	- RF_Cliente_01: Realiza consulta
+		- Especificar urgencia
+		- Especificar ubicacion
+		- Proporcionar datos
+	- RF_Cliente_02: Evaluacion servicio
+		- Evaluacion del tecnico
+		- Evaluacion materiales
+		- Revisar horas operarios
+	- RF_Cliente_03: Proporcionar sugerencias
+	- RF_Cliente_04: Consultar estado servicio
+		- Fecha inicio de reparacion
+		- Fecha estimada de finalizacion
+		- Identificacion tecnicos
+		- Hora llegada tecnicos
+	- RF_Cliente_05: Contratar servicio
+	- RF_Cliente_06: Reclamaciones
+		- Descripcion incidencia
+	- RF_Cliente_07: Cancelar servicio
+	- RF_Cliente_08: Finalizar un servicio
+	- RF_Cliente_09: Acceso datos
+		- Consultar datos usuario
+		- Modificar datos usuario 
+- Tecnico - RF_Tecnico_	XX
+- Director - Ejecutivo RF_DirEj_XX
+- Director - Operaciones RF_DirOp_XX
