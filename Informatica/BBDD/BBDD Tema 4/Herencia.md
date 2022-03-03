@@ -13,7 +13,7 @@ a | b | AND | OR | XOR
 0 | 0 | 0 | 0 | 0
 1 | 0 | 0 | 1 | 1
 0 | 1 | 0 | 1 | 1
-1 | 0 | 1 | 1 | 0
+1 | 1 | 1 | 1 | 0
 
 # 1º ejemplo
 - Trabajador, con subclases asalariado y autonomo {M, XOR} || {M, OR}
