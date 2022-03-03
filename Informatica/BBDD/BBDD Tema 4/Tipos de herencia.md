@@ -87,7 +87,3 @@ Ejemplo 4:
 Empleado| NSS | nombre | fechaNacimiento | direccion | isSecretario | VelocidadTecleo | isTecnico | gradoTecnico | isIngeniero | tipoIngeniero 
 :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: 
 1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-
-![](https://i.imgur.com/ISsXIMB.png)
-![](https://i.imgur.com/oSnRybq.png)
-![](https://i.imgur.com/9jRi3cI.png)
