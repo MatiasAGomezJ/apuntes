@@ -85,18 +85,18 @@ Si cualquiera de esto throws saltarán todo el codigo posterior a ellos dentro d
 8.	Para finalizar hay un `finally` que ejecuta el codigo que esté dentro de este, lo de dentro del bloque se ejecutará independientemente e si ha habido algún erorr o no. 
 
 4- Crea una pàgina web que contengui un formulari amb els següents camps d'informació i després valida el formulari des de Javascript (també pots incloure atributs html, per exemple required).
-	-   Nom, que sigui obligatori amb atribut autofocus.
-	-   Correu electrònic, que sigui obligatori.
-	-   Telèfon, amb un control de tipus «tel». El telèfon ha de tenir 9 dígits.
-	-   Una contrasenya obligatòria, que tengui una longitud mínima de 6 caràcters i màxima de 10. Ha d'acabar amb dos números
-	-   Un botó d'enviament.
+-   Nom, que sigui obligatori amb atribut autofocus.
+-   Correu electrònic, que sigui obligatori.
+-   Telèfon, amb un control de tipus «tel». El telèfon ha de tenir 9 dígits.
+-   Una contrasenya obligatòria, que tengui una longitud mínima de 6 caràcters i màxima de 10. Ha d'acabar amb dos números
+-   Un botó d'enviament.
 
 5- Crea una pàgina web que contengui un formulari amb els següents inputs i després has de fer la validació des de Javascript (pots utilitzar atributs d'HTML per ajudar a la validació).
-	-   Un nom que tengui com a màxim 10 caràcters de llargària i que comenci amb una lletra majúscula.
-	-   Un número de telèfon de 9 números exactes.
-	-   Una adreça de correu electrònic:
-    	-   nomusuari: Sense restriccions.
-    	-   @domini.xxx: on xxx pot ser de dues, tres o quatre lletres.
-	-   Ha de demanar la ciutat i el país (Aquests dos camps poden quedar en blanc).
-	-   També ha de demanar un número de targeta de crèdit, amb el següent patró: 5555-4444-3333-2222
-	-   El formulari ha de tenir un botó d'enviament per correu i un botó que permeti esborrar les dades del formulari.
+-   Un nom que tengui com a màxim 10 caràcters de llargària i que comenci amb una lletra majúscula.
+-   Un número de telèfon de 9 números exactes.
+-   Una adreça de correu electrònic:
+	-   nomusuari: Sense restriccions.
+    -   @domini.xxx: on xxx pot ser de dues, tres o quatre lletres.
+-   Ha de demanar la ciutat i el país (Aquests dos camps poden quedar en blanc).
+-   També ha de demanar un número de targeta de crèdit, amb el següent patró: 5555-4444-3333-2222
+-   El formulari ha de tenir un botó d'enviament per correu i un botó que permeti esborrar les dades del formulari.
