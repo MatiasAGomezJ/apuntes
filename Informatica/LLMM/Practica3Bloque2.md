@@ -20,21 +20,21 @@ try {
 2- Si tenim la següent funció, afegeix una excepció "throw", per controlar que la funció accepti només les dues primeres vocals.
 
 ```js
-	function demanarAE() {
-		let lletra = prompt("Introdueix una una vocal (només A o B): ");
-		if (lletra.toLowerCase() == "a") {
-			alert ("Perfecte, has triat la A");
-		}
-		if (lletra.toLowerCase() == "e") {
-			alert ("Perfecte has triat la E");
-		}
+function demanarAE() {
+	let lletra = prompt("Introdueix una una vocal (només A o E): ");
+	if (lletra.toLowerCase() == "a") {
+		alert ("Perfecte, has triat la A");
 	}
+	if (lletra.toLowerCase() == "e") {
+		alert ("Perfecte has triat la E");
+	}
+}
 ```
 Solucion:
 ```js
 function demanarAE() {
-    let lletra = prompt("Introdueix una una vocal (només A o B): ");
-    try {
+    let lletra = prompt("Introdueix una una vocal (només A o E): ");
+    try 
         if (lletra.toLowerCase() == "a") {
             alert("Perfecte, has triat la A");
         } else if (lletra.toLowerCase() == "e") {
@@ -79,10 +79,10 @@ Solucion:
 3. A continuacion conprueba si tiene como valor `NaN` y si es así devuelve un error con el mensaje `La dada introduïda no és un número`. 
 4. Lo siguiente que hace es pasar la variable a una variable de tipo numero.
 5. Despues comprueba si el numero es mayor que 10  y devuelve error con el mensaje `el número introduït és massa gran`.
-6.  Luego hace lo mismo si el numero es menor que 5.
+6.  Luego hace lo mismo si el numero es menor que 5 y devuelve un error con el mensaje `el número introduït és massa petit`.
 Si cualquiera de esto throws saltarán todo el codigo posterior a ellos dentro del try no se ejecutaria y pasaria directamente al catch.
 7. Dentro del catch simplemente hay un alert que muestra el error por pantalla.
-8.	Para finalizar hay un `finally` que ejecuta el codigo que esté dentro de este, lo de dentro del bloque se ejecutará independientemente e si ha habido algún erorr o no. 
+8.	Para finalizar hay un `finally` que ejecuta el codigo que esté dentro de este, lo de dentro del bloque se ejecutará independientemente e si ha habido algún error o no. 
 
 4- Crea una pàgina web que contengui un formulari amb els següents camps d'informació i després valida el formulari des de Javascript (també pots incloure atributs html, per exemple required).
 -   Nom, que sigui obligatori amb atribut autofocus.
