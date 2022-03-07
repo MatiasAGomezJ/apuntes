@@ -68,6 +68,7 @@ B = Passatger
 π NumVuelo (Viagte [NomPass='Gandalf' & Viatge.ID = Passatger.ID] Passatger)
 
 # Ejercicios
+## El que nos dió el
 Listar el número de vuelo de los vuelos que van a ElPrat el dia 26/10/2009 con una capacidad mayor a 100 plazas.
 
 π NumVuelo (σ(Dia='26/10/2009' & NomAerOrigen='ElPrat' & Capacitat > 100) (Vol)) 
@@ -75,3 +76,4 @@ Listar el número de vuelo de los vuelos que van a ElPrat el dia 26/10/2009 con 
 Listar el número de vuelo y aeropuerto de destino de los vuelos de las compañias españolas que salen de ElPrat.
 
 π NumVuelo, NomAerOrigen (Vol [Vol.NomAerOrigen = 'El Prat' & Vol.NomCo = Companya.NomCo & Companya.Pais = 'Espanya'] Companya)
+## De vuelos
