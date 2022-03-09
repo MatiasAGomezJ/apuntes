@@ -14,5 +14,3 @@ Checklist:
 >*Reminder: After an hour, you should stand up and walk a bit around. Better stop the music or put on different music for the break. Open your window, even if it's cold outside. Fresh air will make it better, **trust me**. *
 >
 >*You could also lay your head down on your desk for ten minutes and listen to a podcast. Or, if you have to read a book, listen to the audiobook of it. You can also listen to the audiobook while doing another thing, that's even better than listening to music while reading the book.* 📖
-
-{{date}}
