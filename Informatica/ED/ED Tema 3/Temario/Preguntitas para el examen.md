@@ -1,4 +1,4 @@
-º# Apuntes Examen Diciembre ED
+# Apuntes Examen Diciembre ED
 1. 1P. Identificar partes interesadas
 2. 3P. Identificar requisitos funcionales de las partes interesadas (2-3 por cada una d ellas)
 3. 6P Elige dos:
