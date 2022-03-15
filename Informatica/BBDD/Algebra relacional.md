@@ -77,3 +77,29 @@ Listar el número de vuelo y aeropuerto de destino de los vuelos de las compañi
 
 π NumVuelo, NomAerOrigen (Vol [Vol.NomAerOrigen = 'El Prat' & Vol.NomCo = Companya.NomCo & Companya.Pais = 'Espanya'] Companya)
 ## De vuelos
+
+
+> A partir de aquí no entra en el temario
+
+# Operación unión
+Partiendo de dos relaciones R y S , obtiene una neuva relación formada por todas las tuplas de R  y de S.
+
+![](https://i.imgur.com/sGcwpwt.png)
+
+# Operación intersección
+Partiendo de dos relaciones R y S, obtiene uan nueva relación formada por todas las tuplas que están en R y en S.
+
+![](https://i.imgur.com/AoXBWvR.png)
+
+# Operación diferencia
+Partiendo de dos relaciones R y S, obtiene uan nueva relación formada por todas las tuplas de R que no están S.
+
+## Ejercicios
+Listar los números de vuelo y AeroDestino de los vuelos que salen de 'Son Sant Joan' o 'El Prat'
+A:= σ(NomAerOrigen = 'Son Sant Joan')(Vuelo)
+B:= σ(NomAerOrigen = 'El Prat')(Vuelo)
+π NumVol, NomAerDestí(AUB)
+
+Listar el nombre de AerDestí de los vuelos  que salen de 'Son Sant Joan' y 'El Prat'
+
+#
