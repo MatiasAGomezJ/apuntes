@@ -69,3 +69,35 @@ Vacio en ingles
 </elementos_vacios>
 ```
 Los dos son maneras validas de representarlos
+### 2.2 (#PCDATA)
+El elemento puede contener texto.
+No contienen etiquetas ni otros elementos
+No se pueden utilizar los siguientes carácteres:
+- "<"
+- "&"
+- "]]>"
+
+```xml
+<!DOCTYPE client [
+	<!ELEMENT client (nom)>
+	<!ELEMENT nom (#PCDATA)>
+]>
+
+<client>
+	<nom> Juan </nom>
+</client>
+```
+### 2.3 ANY 
+Pot contenir atributs.
+No se utiliza mucho, ja que es preferible estructurar los contenidos
+```xml
+<!DOCTYPE color[
+  <!ELEMENT color ANY>
+  <!ELEMENT color ANY>
+  <!ELEMENT color ANY>
+]>
+
+<color />
+<color>Això és un exemple</color>
+<color>Això és <color> un exemple</color></color>
+```
