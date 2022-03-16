@@ -126,7 +126,7 @@ Cuando lo ejecutemos aparecera en consola algo parecido.
 
 Con la imagen ya creada usaremos el comando para ejecutar la imagen de manera similar a como lo haciamos antes.
 ```bash
-docker run --rm -d -p 8080:80 --name web mi_server_nginx
+$ docker run --rm -d -p 8080:80 --name web mi_server_nginx
 ```
 ![](https://i.imgur.com/CknFJ1K.png)
 
