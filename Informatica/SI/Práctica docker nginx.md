@@ -93,4 +93,43 @@ Y si volvemos a `localhost:8080` veremos el html que hemos escrito.
 ## Crea imagen personalizada
 Como hemos visto antes, se puede cambiar el archivo html inicial usando el método anterior, pero otra forma sería crea una imagen personalizada.
 
-Para ello, empezaremos creando un dockerfile, en mi caso lo hare en la carpeta donde estaba el archivo html.
+Para ello, empezaremos creando un dockerfile, en mi caso lo hare en la carpeta donde estaba la carpeta con el archivo html, esta es mi estructura:
+```bash
+$ tree 
+.
+└── site-content
+    └── index.html
+```
+Primero crearemos el archivo `Dockerfile` en el cual podremos las intrucciones para crear la imagen
+```bash
+$ nano Dockerfile
+```
+![](https://i.imgur.com/RLGo0RK.png)
+
+Dentro escribiremos la siguiente información:
+```dockerfile
+FROM nginx:latest
+COPY ./site-content/index.html /usr/share/nginx/html/index.html
+```
+![](https://i.imgur.com/Oz21KQv.png)
+
+Con la primera linea especificamos que utilizamos la imagen de nginx. Con la segunda copiamos nuestro archivo `index.html` en la carpeta por defecto de nginx. Esto lo haciamos antes cuando usabamos el comando docker run dentro del atributo `-v`.
+
+Una vez guardado el archivo crearemos la imagen a partir del dockefile, para ello utilizaremos el siguiente comando:
+```bash
+$ docker build -t mi_server_nginx .
+```
+- El atributo `-t` nos permite especificar un nombre de tag/imagen.
+
+Cuando lo ejecutemos aparecera en consola algo parecido.
+![](https://i.imgur.com/9xMoTST.png)
+
+Con la imagen ya creada usaremos el comando para ejecutar la imagen de manera similar a como lo haciamos antes.
+```bash
+docker run --rm -d -p 8080:80 --name web mi_server_nginx
+```
+![](https://i.imgur.com/CknFJ1K.png)
+
+Podemos ver que se ejecuta como antes y cuando entromos a `localhost:8080` deberiamos ver el html que hemos creado.
+![](https://i.imgur.com/fs9yp9f.png)
+
