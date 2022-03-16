@@ -133,3 +133,28 @@ $ docker run --rm -d -p 8080:80 --name web mi_server_nginx
 Podemos ver que se ejecuta como antes y cuando entromos a `localhost:8080` deberiamos ver el html que hemos creado.
 ![](https://i.imgur.com/fs9yp9f.png)
 
+## Acceder a la maquina azure
+Para poder publicar una página en azure tendremos que crear una máquina en azure, tendremos que entrar en ella y cear la imagen personalizada, siguiendo los pasos que hemos realizado previamente.
+> Importante: Antes de instalar nada hay que actualizar todo con `sudo apt update` y `sudo apt upgrade`
+
+Una vez tengamos la imagen ejecutada en la maquina de azure tendremos que añadir un puerto de entrada a la maquina virtual, para ello seguiremos los siguientes pasos.
+1. Entraremos en la maquina desde el portal de azure y nos iremos al menu lateral, alli accederemos a la pestaña de `Networking`. Aqui veremos una lista ya creada de puertos a los que se pueden acceder.
+
+![](https://i.imgur.com/pa12m7f.png)
+
+2. Crearemos un nuevo puerto dando clic al botón azul `Add inbound port rule` y se abrirá una ventana.
+
+![](https://i.imgur.com/ySKi7je.png)
+
+3. Aqui solo modificaremos el puerto destino a 80 ( o 8080) y lo añadiremos dando click al botón azul que pone `Add`.
+
+![](https://i.imgur.com/f06IFWG.png)
+
+4. Para finalizar podemos ver que se ha añadido correctamente el puero elegido en la lista de reglas.
+
+![](https://i.imgur.com/0e9j0Rt.png)
+
+Hecho esto, si accedemos a la ip de nuestra maquina de azure podremos ver que todo funciona correctamente.
+
+![](https://i.imgur.com/i8ohWht.png)
+
