@@ -157,4 +157,3 @@ Una vez tengamos la imagen ejecutada en la maquina de azure tendremos que añadi
 Hecho esto, si accedemos a la ip de nuestra maquina de azure podremos ver que todo funciona correctamente.
 
 ![](https://i.imgur.com/i8ohWht.png)
-
