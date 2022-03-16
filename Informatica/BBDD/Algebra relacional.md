@@ -102,4 +102,14 @@ B:= σ(NomAerOrigen = 'El Prat')(Vuelo)
 
 Listar el nombre de AerDestí de los vuelos  que salen de 'Son Sant Joan' y 'El Prat'
 
-#
+# Operacción producto cartesiana
+Partiendo de dos relaciones R y S. Obtiene una nueva relacción formada por todas las tuplas que resultan de concatenar todas las tuplas de R con todas alas tuplas de S.
+
+R x S
+
+SELECT * 
+FROM Passatget 
+JOIN Viatge
+ON Passatger.ID = Viatge.ID
+
+π NumVol(Passatger[Passatger.ID = Viatge.ID AND Passatger.NumPass = "Noe"]Viatge)
