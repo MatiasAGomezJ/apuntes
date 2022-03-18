@@ -221,6 +221,38 @@ Solucion:
     </identificació>
 </productes>
 ```
+No está escrito los elementos de `producte` y en el esquema describe que puede haber multiples de este.
+En el primer producto el nombre esta antes de la identificacion.
+En el segundo producto, el elemento `nom` esta dentro del elemento `identificacio`, cosa que no es correcta y probablemente era el nomber del producto.
+Solucion:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes [
+    <!ELEMENT productes (producte)*>
+    <!ELEMENT producte (identificacio, nom)>
+    <!ELEMENT identificacio (#PCDATA | codi | id)*>
+    <!ELEMENT codi (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT nom (#PCDATA)>
+]>
+<productes>
+	<producte> <!-- Añadido -->
+		<identificacio>
+			Són de mànec vermell i en queden 10 unitats.
+			<codi>MAR264</codi>
+		</identificacio>
+		<nom>martell</nom> <!-- Mover afuera -->
+	</producte> <!-- Añadido -->
+	<producte> <!-- Añadido -->
+	    <identificacio>
+	        <codi>CLAU387</codi>
+	        <id>678984</id>
+	        No en queda cap al magatzem.
+	    </identificacio>
+		<nom>clau anglesa</nom> <!-- Mover fuera -->
+	</producte> <!-- Añadido -->
+</productes>
+```
 # Ejercicio 9
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
