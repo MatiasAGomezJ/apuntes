@@ -23,7 +23,7 @@ for(Severity s : Severity.values()){
 ```
 
 
-`.compareTo()` No puede combrorar diferentes tipos de enumerados. Pero si puedes hacer `.equals()`.
+`.compareTo()` No puede comprobar diferentes tipos de enumerados. Pero si puedes hacer `.equals()`.
 
 Si un método es `final` significa que no puede ser sobreescrito.
 
