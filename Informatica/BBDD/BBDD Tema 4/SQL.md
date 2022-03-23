@@ -1,4 +1,0 @@
-CREATE DATABASE db_vols
-CREATE TABLE Companyia(NomCom CHAR(15) PRIMARY KEY NOTNULL, Pais CHAR(15))
-CREATE TABLE Companyia(NomCom, Pais)
-
