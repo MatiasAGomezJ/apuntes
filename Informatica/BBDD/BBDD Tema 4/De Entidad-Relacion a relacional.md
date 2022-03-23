@@ -28,7 +28,7 @@ Se elige una clave principal para cada una de las nuevas relaciones/tablas.
 - Si se tiene una relacion:
 	- 0/1 .. 1 -0/1 ..  1 se elige cualquiera
 	- 0/1 .. `*` - 0/1 .. 1 se elige la PK del `*`
-	- 0//1 .. * - 0/1 .. * se elige como PK de las dos PK juntas
+	- 0/1 .. `*` - 0/1 .. `*` se elige como PK de las dos PK juntas
 
 >  ***PK***: Primary Key
 > Donde hay asterisco hay PK

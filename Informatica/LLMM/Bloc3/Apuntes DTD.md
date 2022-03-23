@@ -1,6 +1,6 @@
 # DTD
-## 1 Sintaxis
-### 1.1 Interno
+## 0Sintaxis
+### 0.1 Interno
 ![](https://i.imgur.com/t0u5Ibt.png)
 
 Este es el que usaremos (probablemente) la mayoria del tiempo.
@@ -15,8 +15,8 @@ Este es el que usaremos (probablemente) la mayoria del tiempo.
 	</sub-elemento>
 <elemento>
 ```
-### 1.2 Externo
-#### 1.2.1 Privado
+### 0.2 Externo
+#### 0.2.1 Privado
 ![](https://i.imgur.com/o5vRIxF.png)
 
 Archivo1.xml
@@ -33,7 +33,7 @@ Archivo2.xml
 <!ELEMENT sub-elemento (sub-sub-elementos)>
 <!ELEMENT sub-sub-elemento (#PCDATA)>
 ```
-#### 1.2.2 Público
+#### 0.2.2 Público
 ![](https://i.imgur.com/UGFCSYO.png)
 
 Archivo1.xml
@@ -54,10 +54,11 @@ Archivo2.xml
 Que es una FPI? Pues [aquí](https://es.wikipedia.org/wiki/Formal_Public_Identifier) tienes.
 Dudo que lo usemos.
 
-## 2 Declaración de elementos
+## 1 Declaración de elementos
 El elemento puede ser:
-### 2.1 EMPTY
-Vacio en ingles
+### 1.1 EMPTY
+Vacio en ingles, no puede tener contenido.
+Tampoco puede tener atributos.
 ```xml
 <!DOCTYPE elementos_vacios [
 	<!ELEMENT elemento_vacio EMPTY>
@@ -69,7 +70,7 @@ Vacio en ingles
 </elementos_vacios>
 ```
 Los dos son maneras validas de representarlos
-### 2.2 (#PCDATA)
+### 1.2 (#PCDATA)
 El elemento puede contener texto.
 No contienen etiquetas ni otros elementos
 No se pueden utilizar los siguientes carácteres:
@@ -87,7 +88,7 @@ No se pueden utilizar los siguientes carácteres:
 	<nom> Juan </nom>
 </client>
 ```
-### 2.3 ANY 
+### 1.3 ANY 
 Pot contenir atributs.
 No se utiliza mucho, ja que es preferible estructurar los contenidos
 ```xml
@@ -101,3 +102,125 @@ No se utiliza mucho, ja que es preferible estructurar los contenidos
 <color>Això és un exemple</color>
 <color>Això és <color> un exemple</color></color>
 ```
+### 1.4 , (coma)
+Significa que l'element conté una série de fills en l'ordre indicat.
+```xml
+<!DOCTYPE alumne [
+   <!ELEMENT alumne (nom, data_matricula, modul)>
+   <!ELEMENT nom (#PCDATA)>
+   <!ELEMENT data_matricula (#PCDATA)>
+   <!ELEMENT modul (#PCDATA)>
+]>
+
+<alumne>
+   <nom>Carlos</nom>
+   <data_matricula>26-09-2020</data_matricula>
+   <modul>Llenguatges</modul>
+</alumne>
+```
+### 1.5 | (OR)
+Significa que l'element contè nomès un dels dos fills indicats.
+```xml
+<!DOCTYPE alumne [
+   <!ELEMENT alumne (nom, (data_matricula | curs), modul)>
+   <!ELEMENT nom (#PCDATA)>
+   <!ELEMENT data_matricula (#PCDATA)>  
+   <!ELEMENT curs (#PCDATA)>
+   <!ELEMENT modul (#PCDATA)>
+]>
+  
+<alumne>
+   <nom>Carlos</nom>
+   <data_matricula>26-09-2020</data_matricula>
+   <modul>Llenguatges</modul>
+</alumne>
+```
+### 1.6 ?
+Significa que l'element pot aparèixer o no, però nomès una vegada
+```xml
+<!DOCTYPE pizza [  
+  <!ELEMENT pizza (nom, forma?)>  
+  <!ELEMENT nom (#PCDATA)>  
+  <!ELEMENT forma (#PCDATA)>  
+]>  
+  
+<!--Validació correcta-->  
+<pizza>  
+   <nom> Margarita </nom>  
+   <forma> rodona </forma>  
+</pizza>  
+  
+<!--Validació correcta-->
+<pizza>  
+   <nom> Napolitana </nom>  
+</pizza>  
+```
+### 1.7 *
+Significa que l'element pot no aparèixer o aparèixer una o més vegades.
+```xml
+<!DOCTYPE arcoiris [
+  <!ELEMENT arcoiris (color*)>
+  <!ELEMENT color (#PCDATA)>
+]>
+
+----------------------
+<arcoiris>
+  <color>Blau</color>
+  <color>Negre</color>
+  <color>Groc</color>
+</arcoiris>
+```
+### 1.8 +
+Significa que l'element ha d'apaerèixer una o més vegades (no pot no aparèixxer).
+```xml
+<!DOCTYPE arcoiris [
+  <!ELEMENT arcoiris (color+)>
+  <!ELEMENT color (#PCDATA)>
+]>
+
+<arcoiris>
+  <color>Blau</color>
+  <color>Negre</color>
+  <color>Groc</color>
+</arcoiris>
+```
+### 1.9 ()
+Permet agrupar expressions.
+```xml
+<!DOCTYPE el_agrupat [  
+  <!ELEMENT el_agrupat (a, (c|b))>  
+  <!ELEMENT a EMPTY>  
+  <!ELEMENT b EMPTY>  
+  <!ELEMENT c (#PCDATA)>  
+]>  
+  
+<!-- Validació correcta-->
+<el_agrupat>
+   <a/>
+   <b/>
+</el_agrupat>
+
+<!-- Validació correcta-->
+<el_agrupat>  
+   <a/>
+   <c> Rosa </c>    
+</el_agrupat>
+```
+## 2 Declaració d'atributs
+Se declara de la siguiente manera:
+```xml
+<!ATTLIST nom_element nom_atribut tipus_atribut valor_inicial_atribut>
+```
+Cuando quieres definir varios atributos dentro del mismo elemento:
+```xml
+<!ATTLIST nom_element nom_atribut1 tipus_atribut1 valor_inicial_atribut1>  
+<!ATTLIST nom_element nom_atribut2 tipus_atribut2 valor_inicial_atribut2>  
+  
+<!ATTLIST nom_element  
+  nom_atribut1 tipus_atribut1 valor_inicial_atribut1  
+  nom_atribut2 tipus_atribut2 valor_inicial_atribut2  
+>
+```
+
+Tipus d'atributs:
+#
