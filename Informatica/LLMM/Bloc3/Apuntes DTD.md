@@ -55,8 +55,8 @@ Que es una FPI? Pues [aquí](https://es.wikipedia.org/wiki/Formal_Public_Identif
 Dudo que lo usemos.
 
 ## 1 Declaración de elementos
-El elemento puede ser:
-### 1.1 EMPTY
+### El elemento puede ser:
+#### 1.1 EMPTY
 Vacio en ingles, no puede tener contenido.
 Tampoco puede tener atributos.
 ```xml
@@ -70,7 +70,7 @@ Tampoco puede tener atributos.
 </elementos_vacios>
 ```
 Los dos son maneras validas de representarlos
-### 1.2 (#PCDATA)
+#### 1.2 (#PCDATA)
 El elemento puede contener texto.
 No contienen etiquetas ni otros elementos
 No se pueden utilizar los siguientes carácteres:
@@ -88,7 +88,7 @@ No se pueden utilizar los siguientes carácteres:
 	<nom> Juan </nom>
 </client>
 ```
-### 1.3 ANY 
+#### 1.3 ANY 
 Pot contenir atributs.
 No se utiliza mucho, ja que es preferible estructurar los contenidos
 ```xml
@@ -102,7 +102,9 @@ No se utiliza mucho, ja que es preferible estructurar los contenidos
 <color>Això és un exemple</color>
 <color>Això és <color> un exemple</color></color>
 ```
-### 1.4 , (coma)
+
+### Sintaxis
+#### 1.4 , (coma)
 Significa que l'element conté una série de fills en l'ordre indicat.
 ```xml
 <!DOCTYPE alumne [
@@ -118,7 +120,7 @@ Significa que l'element conté una série de fills en l'ordre indicat.
    <modul>Llenguatges</modul>
 </alumne>
 ```
-### 1.5 | (OR)
+#### 1.5 | (OR)
 Significa que l'element contè nomès un dels dos fills indicats.
 ```xml
 <!DOCTYPE alumne [
@@ -135,7 +137,7 @@ Significa que l'element contè nomès un dels dos fills indicats.
    <modul>Llenguatges</modul>
 </alumne>
 ```
-### 1.6 ?
+#### 1.6 ?
 Significa que l'element pot aparèixer o no, però nomès una vegada
 ```xml
 <!DOCTYPE pizza [  
@@ -155,7 +157,7 @@ Significa que l'element pot aparèixer o no, però nomès una vegada
    <nom> Napolitana </nom>  
 </pizza>  
 ```
-### 1.7 *
+#### 1.7 *
 Significa que l'element pot no aparèixer o aparèixer una o més vegades.
 ```xml
 <!DOCTYPE arcoiris [
@@ -170,7 +172,7 @@ Significa que l'element pot no aparèixer o aparèixer una o més vegades.
   <color>Groc</color>
 </arcoiris>
 ```
-### 1.8 +
+#### 1.8 +
 Significa que l'element ha d'apaerèixer una o més vegades (no pot no aparèixxer).
 ```xml
 <!DOCTYPE arcoiris [
@@ -184,7 +186,7 @@ Significa que l'element ha d'apaerèixer una o més vegades (no pot no aparèixx
   <color>Groc</color>
 </arcoiris>
 ```
-### 1.9 ()
+#### 1.9 ()
 Permet agrupar expressions.
 ```xml
 <!DOCTYPE el_agrupat [  
@@ -222,5 +224,7 @@ Cuando quieres definir varios atributos dentro del mismo elemento:
 >
 ```
 
-Tipus d'atributs:
-#
+### Tipus d'atributs:
+#### CDATA
+#### NMTOKEN
+#### NMTOKENS
