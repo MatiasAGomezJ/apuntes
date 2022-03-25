@@ -6,6 +6,7 @@
 Este es el que usaremos (probablemente) la mayoria del tiempo.
 ```xml
 <!DOCTYPE elemento [
+	<!ELEMENT elemento (sub-elementos)>
 	<!ELEMENT sub-elemento (sub-sub-elementos)>
 	<!ELEMENT sub-sub-elemento (#PCDATA)>
 ]>
