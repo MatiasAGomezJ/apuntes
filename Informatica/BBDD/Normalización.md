@@ -28,6 +28,40 @@ Una relación está en 2FN, si y solo si, está en 1FN y todo atributo no clave 
 
 Excepción: un atributo puede depender funcionalmente de parte de la PK si este atributo es parte de una clave alternativa. 
 
+> Dependencia no completa: depende de una de las deos atributos de la pk
+
+Suministros(**CodiProv, CodiArticulo**, Cantidad, CiudaProv)
+CodiProv -> CiudadProv
+CodiProvm, CodiArticulo -> Cantidad, CiudadProv
+## Tercera Forma Normal ( 3FN )
+Una relación está en 3FN, si y solo si, está en 2FN y ningún atributo no clave depende funcionalmente de otro conjunto de atributos no clave.
+
+La excepcción aplicada en la 2FN también se propaga a la 3FN.
+
+Clientes(**CodiProv**, Calle, Numero, Ciudad, Provicincia)
+## Forma Normal Boyce-Codd ( FNBC )
+Una relación está en FNBC, si y solo si, está en 3FN y si todos los determinantes son clave candidata de la relación.
+
+Dada una dependencia funcional { $X$ } -> { $Y$ }, un determinante es el conjunto { $X$ }.
+
+Notas(DNIALumno, CodiAsignatura, CodiMatricula, Nota)
+
+DNIAlumno | CodiAsignatura | CodiMatricula | Nota
+:--: | :--: | :--: | :--:
+111 | 1000 | 123 | A
+111 | 2000 | 123 | B
+222 | 3000 | 215 | B
+222 | 1000 | 215 | B
+222 | 2000 | 215 | C
+
+### Determinantes
+**DNIAlumno** -> CodiMatricula
+**CodiMatricula** -> DNIAlumno
+**DNIAlumno, CodigoAsignatura** -> CodiMatricula, Nota
+**CodiAsignatura, CodiMatricula** -> DNIAlumno, Nota
+### Claves candidatas
+DNIAlumno, CodigoAsignatura 
+CodiAsignatura, CodiMatricula
 ## Conceptos importantes
 ### Superclave
 La superclave de una relación R(A1, A2, ...,An) es un conjunto de los atributos del esquema tal que en su instancia no puede haber dos tuplas que tengan la misma combinación de valores para los atributos del subocnjunto.
@@ -46,5 +80,5 @@ Nota(DNI, id_Asignatura, id_Nota, nota)
 
 ### Clave/LLave principal
 
-
-- Clave/LLave alternativa
+### Clave/LLave alternativa
+> Cuando hay dos posibles superclaves, la que no se convierte superclave no es clave alternativa
