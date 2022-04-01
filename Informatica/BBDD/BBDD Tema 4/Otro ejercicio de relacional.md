@@ -27,7 +27,7 @@ La tres es mas ineficiente que la dos para {M;XOR}
 - R_D_E(**id_d**, e3)
 ## Paso 5
 - A(**a1**, a2, a3)
-- B(b1, **b2**, b3)
+- B(b1, **b2**, b3, id_d)
 - C(c1, c2, **id_c**, a1, b2) o C(c1, c2, **a1, b2**)
 - D(d1, d2, **id_d**)
 ### Herencia Opcion 1
