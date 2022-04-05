@@ -24,9 +24,9 @@ Habitación | Paciente | Enfermero
 333 | Pere | 6 
 
 ## Segunda Forma Normal ( 2FN )
-Una relación está en 2FN, si y solo si, está en 1FN y todo atributo no clave depende funcionalmente en forma completa de la PK.
+Una relación está en 2FN, si y solo si, está en 1FN y todo atributo no clave **depende** funcionalmente **en forma completa de la PK**.
 
-Excepción: un atributo puede depender funcionalmente de parte de la PK si este atributo es parte de una clave alternativa. 
+Excepción: un atributo puede **depender** funcionalmente de **parte de la PK** si este atributo es parte de una clave alternativa. 
 
 > Dependencia no completa: depende de una de las deos atributos de la pk
 
