@@ -51,7 +51,7 @@ Profesores(DNIProf, NombreProf, ApellidoProf, DespachoProf, NombreDesp)
 Profesores(DNIProf, NombreProf, ApellidoProf, DespachoProf)
 Despachos(DespachoProf, NombreDesp)
 
-![[Ejercicio3.png]]
+![](https://i.imgur.com/F80GWmO.jpg)
 
 # Ejercicio 4
 > Esta en 1FN
@@ -64,7 +64,10 @@ Estudio -> DireccionEstudio
 A_P(**Título, Año, Actor**)
 Pelicula(**Título, Año**, Duracion, Tipo, Estudio, Direccion)
 
+![](https://i.imgur.com/QR2xLEK.jpg)
 ## 3FN & FNBC
 A_P(**Título, Año, Actor**)
 Pelicula(**Título, Año**, Duracion, Tipo, Estudio, Direccion)
 Estudio(**Estudio**, Direccion)
+
+![](https://i.imgur.com/oE1BipK.jpg)
