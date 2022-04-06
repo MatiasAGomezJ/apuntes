@@ -34,7 +34,7 @@ Suministros(**CodiProv, CodiArticulo**, Cantidad, CiudaProv)
 CodiProv -> CiudadProv
 CodiProvm, CodiArticulo -> Cantidad, CiudadProv
 ## Tercera Forma Normal ( 3FN )
-Una relación está en 3FN, si y solo si, está en 2FN y ningún atributo no clave depende funcionalmente de otro conjunto de atributos no clave.
+Una relación está en 3FN, si y solo si, está en 2FN y ningún atributo no clave depende funcionalmente de otro conjunto  de ( o un ) atributos no clave.
 
 La excepcción aplicada en la 2FN también se propaga a la 3FN.
 

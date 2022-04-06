@@ -30,3 +30,21 @@ R1(A, B, C)
 R2(C, D, F)
 R3(D, E)
 ## 3FN
+# Ejercicio 3
+Profesores(DNIProf, NombreProf, DespachoProf, NombreDesp)
+
+DNIProf | NombreProf | DespachoProf | NombreDesp
+:--: | :--: | :--: | :--:
+11111A | Pedro Martínez | 2.2.B05 | Despacho naranja
+
+DNIProf -> NombreProf, DespachoProf, NombreDesp
+DespachoProf -> NombreDesp
+
+## 1FN & 2FN
+Profesores(DNIProf, NombreProf, ApellidoProf, DespachoProf, NombreDesp)
+
+## 3FN & FNBC
+Profesores(DNIProf, NombreProf, ApellidoProf, DespachoProf)
+Despachos(DespachoProf, NombreDesp)
+
+![[Ejercicio3.png]]
