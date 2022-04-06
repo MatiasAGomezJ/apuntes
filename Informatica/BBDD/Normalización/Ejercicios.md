@@ -16,6 +16,10 @@ R1(A, B, E)
 R2(A, C, D)
 R3(C, F)
 ## FNBC
+R1(A, B)
+R2(A, C, D)
+R3(C, F)
+R4(A, E)
 
 # Ejercicio 2
 R(A, B, C, D, E, F)
@@ -48,3 +52,19 @@ Profesores(DNIProf, NombreProf, ApellidoProf, DespachoProf)
 Despachos(DespachoProf, NombreDesp)
 
 ![[Ejercicio3.png]]
+
+# Ejercicio 4
+> Esta en 1FN
+
+Pelicula(Título, Año, Duracion, Tipo, Estudio, Direccion, Actor)
+Título, Año -> Duracion, Tipo, Estudio
+Estudio -> DireccionEstudio
+
+## 2FN
+A_P(**Título, Año, Actor**)
+Pelicula(**Título, Año**, Duracion, Tipo, Estudio, Direccion)
+
+## 3FN & FNBC
+A_P(**Título, Año, Actor**)
+Pelicula(**Título, Año**, Duracion, Tipo, Estudio, Direccion)
+Estudio(**Estudio**, Direccion)

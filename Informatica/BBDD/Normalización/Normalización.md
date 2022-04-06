@@ -82,3 +82,9 @@ Nota(DNI, id_Asignatura, id_Nota, nota)
 
 ### Clave/LLave alternativa
 > Cuando hay dos posibles superclaves, la que no se convierte superclave no es clave alternativa
+### Dependencia indirecta
+Si:
+{ $X$ } -> { $Y$ }
+{ $Y$ } -> { $Z$ }
+Entonces:
+{ $X$ } -> { $Z$ }
