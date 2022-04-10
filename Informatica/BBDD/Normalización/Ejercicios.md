@@ -28,6 +28,8 @@ A, F -> D
 D -> E
 
 **PK**: A
+
+
 ## 2FN
 R1(A, B, C)
 R2(C, D, F)
