@@ -9,8 +9,7 @@ E -> A
 **PK**: A, B
 ## 2FN
 R1(A, B, E)
-R2(A, C, D)
-R3(C, F)
+R2(A, C, D, F)
 ## 3FN
 R1(A, B, E)
 R2(A, C, D)
@@ -19,7 +18,7 @@ R3(C, F)
 R1(A, B)
 R2(A, C, D)
 R3(C, F)
-R4(A, E)
+R4(E, A)
 
 # Ejercicio 2
 R(A, B, C, D, E, F)
