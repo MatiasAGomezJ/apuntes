@@ -104,10 +104,39 @@ Els tipus de dades poden ser:
 -   **Tipus de dades primitius:** string, boolean, decimal, float, double, data-hora (duration, dateTime, time, date, gYearMonth, etc.), hexBinary, anyURI, etc.
 -   **Tipus de dades no primitius:**  normalizedString, token, language, IDREF, Name, integer, long, etc.
 
-
+Ejemplo:
+```xml
+XSD:  
+<xs:element name="titol" type="xs:string"/>  
+<xs:element name="capitols" type "xs:integer"/>  
+  
+XML:
+<titol>La dama de las camelias</titol>  
+<capitols>10</capitols>
+```
 ##### Restriccions
+Les restriccions s'utilitzen per definir els valors que són vàlids als elements i atributs XML. 
+```xml
+<xs:simpleType name=”nom”>
+   <xs:restriction base="tipus">
+      ...definicions de les restriccions...
+   <xs:restriction>
+</xs:simpleType>
+```
+En los ejemplo de las siguientes restricciones se supone que se ha escrito dentro del ejemplo de arriba.
 ###### Rango de numeros
+S'utilitza en els tipus de dades numèriques i data/hora.
+
+Paraules clau: **minInclusive**, **maxInclusive**, **minExclusive**, **maxExclusive**.
+```xml
+<xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+</xs:restriction>
+```
 ###### Digits
+S'utilitza en tots els tipus de dades.
+Paraula clau: **totalDigits** que defineix el número màxim de dígits permesos.
 ###### Lista de valores
 ###### Longitud
 ###### Plantilla de carácteres
