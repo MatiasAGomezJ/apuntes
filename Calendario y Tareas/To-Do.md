@@ -2,15 +2,25 @@
 ---
 ## TO-DO today
 ### Programacion
-- [x] Mirar el panel
-- [x] Repasar el DIP-kata
-- [ ] Mirar que hacer con el ollivanders-api-rest
-- [ ] Leer libro "Java 8 Fundamentals". Capitulo 1 y 16
+- [ ] Mirar el panel
+- [ ] Leer libro "Java 8 Fundamentals". Capitulo 16
 - [ ] Hacer ejercicios del anterior punto
+- [ ] Seguir con el curso de quarkus
 ### Sistemas informaticos
-- [x] Mirar los trabajos, asegurarse que estoy "al dia"
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
 ### Base de datos
-- [x] Repasar la normalización
+- [ ] Trasnfusionar el PDF del tema 6 a markdown
 ### Lenguaje de marcas
-- [x] Hacer apuntes
+- [ ] Repasar práctica
+- [ ] Apuntes DTD
+### Otros
+- [ ] Crear otros *apuntes* para información
+- [ ] Pasar lo de mi cuadreno a esos otros *apuntes*
+- [ ] Mirar de instalar la version correctar de:
+	- [ ] Maven
+	- [ ] Java
+	- [ ] Quarkus
+
+## Before cada sesión
+- Leer 10 minutos del libro **tomando apuntes**, si no haces apuntes no lo leas
+- Practicar 5 minutos de mecanografía
