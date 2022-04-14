@@ -11,8 +11,8 @@
 ### Base de datos
 - [ ] Trasnfusionar el PDF del tema 6 a markdown
 ### Lenguaje de marcas
-- [ ] Repasar práctica
-- [ ] Apuntes DTD
+- [x] Repasar práctica
+- [x] Apuntes DTD
 ### Otros
 - [ ] Crear otros *apuntes* para información
 - [ ] Pasar lo de mi cuadreno a esos otros *apuntes*
