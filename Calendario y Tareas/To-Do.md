@@ -9,14 +9,14 @@
 - [ ] Java 8 Language Features. Reflexion
 ### Sistemas informaticos
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
-### Base de datos
-- [ ] Trasnfusionar el PDF del tema 6 a markdown
+### Entornos de desarrollo
+- [x] Trasnfusionar el PDF del tema 6 a markdown
 ### Lenguaje de marcas
 - [x] Repasar práctica
 - [x] Apuntes DTD
 ### Otros
-- [ ] Crear otros *apuntes* para información
-- [ ] Pasar lo de mi cuadreno a esos otros *apuntes*
+- [x] Crear otros *apuntes* para información
+- [x] Pasar lo de mi cuadreno a esos otros *apuntes*
 - [ ] Mirar de instalar la version correctar de:
 	- [ ] Maven
 	- [ ] Java
