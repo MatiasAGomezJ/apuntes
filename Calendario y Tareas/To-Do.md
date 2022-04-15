@@ -2,11 +2,11 @@
 ---
 ## TO-DO today
 ### Programacion
-- [ ] Mirar el panel
-- [ ] Leer libro "Java 8 Fundamentals". Capitulo 16
+- [x] Mirar el panel
+- [x] Leer libro "Java 8 Fundamentals". Capitulo 16
 - [ ] Hacer ejercicios del anterior punto
 - [ ] Seguir con el curso de quarkus
-- [ ] Java 8 Language Features. Reflection
+- [x] Java 8 Language Features. Reflection
 ### Sistemas informaticos
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
 ### Entornos de desarrollo
