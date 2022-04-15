@@ -6,11 +6,12 @@
 - [ ] Leer libro "Java 8 Fundamentals". Capitulo 16
 - [ ] Hacer ejercicios del anterior punto
 - [ ] Seguir con el curso de quarkus
-- [ ] Java 8 Language Features. Reflexion
+- [ ] Java 8 Language Features. Reflection
 ### Sistemas informaticos
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
 ### Entornos de desarrollo
 - [x] Trasnfusionar el PDF del tema 6 a markdown
+- [ ] Ennodar [[Extracción_PDF_ED_Tema_5]]
 ### Lenguaje de marcas
 - [x] Repasar práctica
 - [x] Apuntes DTD
