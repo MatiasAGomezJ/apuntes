@@ -11,7 +11,7 @@
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
 ### Entornos de desarrollo
 - [x] Trasnfusionar el PDF del tema 6 a markdown
-- [ ] Ennodar [[Extracción_PDF_ED_Tema_5]]
+- [x] Nodificar [[Extracción_PDF_ED_Tema_5]]
 ### Lenguaje de marcas
 - [x] Repasar práctica
 - [x] Apuntes DTD
@@ -23,6 +23,6 @@
 	- [ ] Java
 	- [ ] Quarkus
 
-## Before cada sesión
+## En cada sesión
 - Leer 10 minutos del libro **tomando apuntes**, si no haces apuntes no lo leas
 - Practicar 5 minutos de mecanografía
