@@ -1,0 +1,2 @@
+# Diseño de las pruebas
+El diseño de las pruebas es el siguiente paso después de haber llevado a cabo el plan de pruebas. Este diseño consistirá en **establecer los [[Casos de prueba]], identificando, en cada caso, el [[Tipo de pruebas]] que deberá efectuarse**.

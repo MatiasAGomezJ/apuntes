@@ -1,0 +1,2 @@
+# Pruebas de carga
+Las pruebas de **carga** son pruebas que tienen como objetivo comprobar el rendimiento y la integridad de la aplicación ya terminada con datos reales. Se trata simular el entorno de explotación de la aplicación.

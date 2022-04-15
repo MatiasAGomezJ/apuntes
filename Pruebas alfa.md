@@ -1,0 +1,2 @@
+# Pruebas alfa
+Las **pruebas alfa** son un tipo de pruebas de aceptación las cuales consisten en invitar al cliente que venga al entorno de desarrollo a probar el sistema. Se trabaja en un entorno controlado y el cliente siempre tiene un experto a mano para ayudarle a usar el sistema y para analizar los resultados.

@@ -1,0 +1,2 @@
+# Pruebas beta
+Las **pruebas beta** son un tipo de prubas de aceptación las cuales vienen después de las pruebas alfa, y se desarrollan en el entorno del cliente, un entorno que está fuera de control para el desarrollador y el equipo de trabajo. Aquí el cliente se queda solo con el producto y trata de encontrar los errores, de los que informará el desarrollador.

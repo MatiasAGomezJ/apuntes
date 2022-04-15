@@ -41,8 +41,7 @@ La planificación de las pruebas es una tarea que se debe ir desarrollando **a l
 
 Es importante tener presente que cuanto antes se detecte un error en el proyecto informático, más fácil será contrarrestar y solucionar ese error. El **coste** de la resolución de un problema **crece exponencialmente** a medida que avanzan las fases del proyecto en las que se detecte.
 
-Algunos de los contenidos del plan de pruebas
-(IEEE 829-2008 ) son:
+Algunos de los contenidos del plan de pruebas (IEEE 829-2008 ) son:
 - Identificador del plan de pruebas
 - Descripción del plan de pruebas
 - Elementos del software a probar
