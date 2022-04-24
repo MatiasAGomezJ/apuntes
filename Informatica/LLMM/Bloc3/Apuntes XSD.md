@@ -123,7 +123,7 @@ Ejemplo:
 ```xml
 XSD:  
 <xs:element name="titol" type="xs:string"/>  
-<xs:element name="capitols" type "xs:integer"/>  
+<xs:element name="capitols" type="xs:integer"/>  
   
 XML:
 <titol>La dama de las camelias</titol>  

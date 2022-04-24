@@ -2,27 +2,23 @@
 ---
 ## TO-DO today
 ### Programacion
-- [x] Mirar el panel
-- [x] Leer libro "Java 8 Fundamentals". Capitulo 16
-- [ ] Hacer ejercicios del anterior punto
-- [ ] Seguir con el curso de quarkus
-- [x] Java 8 Language Features. Reflection
+- [ ] Mirar el panel
+- [ ] Seguir con el Sprint actual
 ### Sistemas informaticos
 - [ ] Hacer el trabajo [Seguridad en docker](https://classroom.google.com/c/MzQ1NTIyMzQwMDM3/a/NDkyODM4NTY5Mjg2/details)
 ### Entornos de desarrollo
-- [x] Trasnfusionar el PDF del tema 6 a markdown
-- [x] Nodificar [[Extracción_PDF_ED_Tema_5]]
+- [x] Crear copia del examen del examen ese que me fue mal (fotos en Slack)
 ### Lenguaje de marcas
-- [x] Repasar práctica
-- [x] Apuntes DTD
+- [x] Repasar examen
 ### Otros
-- [x] Crear otros *apuntes* para información
-- [x] Pasar lo de mi cuadreno a esos otros *apuntes*
+- [x] Leer lo que hay en mi otro repo de información
 - [ ] Mirar de instalar la version correctar de:
 	- [ ] Maven
 	- [ ] Java
 	- [ ] Quarkus
 
 ## En cada sesión
-- Leer 10 minutos del libro **tomando apuntes**, si no haces apuntes no lo leas
+- Leer 10 minutos del libro **tomando apuntes**, si no haces apuntes no lo leas.
 - Practicar 5 minutos de mecanografía
+
+[[Recordatorios de estudio]]
