@@ -1,7 +1,7 @@
 # XsD
 ## Pa utizarlo
 Hay que añadir en la raiz del xml lo sigiuente:
-1. `xmlns:xsi="<http://www.w3.org/2001/XMLSchema-instance>"`.
+1. `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"`.
 2. `xsi:noNamespaceSchemaLocation="AAAA.xsd"` donde `AAAA.xsd` es el nombre donde estará el esquema. ( Tambien puede ser una URL).
 
 ### Ejemplo 1:
@@ -14,7 +14,7 @@ Sin XSD:
 ```
 Con XSD:
 ```xml
-<cicle xmlns:xsi="<http://www.w3.org/2001/XMLSchema-instance>"	xsi:noNamespaceSchemaLocation="esquema_cicle.xsd">	
+<cicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:noNamespaceSchemaLocation="esquema_cicle.xsd">	
   <nom>1r ASIX</nom>
   <modul>LLMM</modul>
 </cicle>
