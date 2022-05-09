@@ -347,5 +347,5 @@ XSD:
 </xs:element>
   
 XML:
-<llinatge nacionalitat="Espanyola">Servera</llinatge>
+<llinatge nacionalitat="Espanyola"></llinatge>
 ```

@@ -16,7 +16,7 @@ Cosas a tener en cuenta:
 	c) Métodos
 	d) Ninguna de las anteriores
 	
-3. Respeco al diagrama, Piloto y Persona tienen una relación de:
+3. Respecto al diagrama, Piloto y Persona tienen una relación de:
 	**a) Herencia**
 	b) Composición
 	c) Agregación
@@ -97,8 +97,8 @@ Cosas a tener en cuenta:
 16. Una clase abstracta:
 	a) Permite la creación de instancias de esa clase
 	b) Todos los métodos son abstractos
-	<ins>c) Al menos un método tiene que ser abstracto</ins>
-	d) Ninguna de las anteriores
+	c) Al menos un método tiene que ser abstracto
+	**d) Ninguna de las anteriores**
 	
 17. Una interfa:
 	**a) Sirve para definir métodos, pero no se implementan**
@@ -123,3 +123,4 @@ Cosas a tener en cuenta:
 	b) Se creará el objeto de tipo nave dentro del constructor de la clase Ractor.
 	c) Se creará una función en la clase Nave que pasará por parámetro un objeto reactor
 	d) Ninguna de las anteriores
+	
