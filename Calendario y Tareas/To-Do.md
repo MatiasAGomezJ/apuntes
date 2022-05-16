@@ -8,7 +8,7 @@
 - [ ] Trabajo: [Instalación de minicube y kubectl](https://classroom.google.com/u/0/c/MzQ1NTIyMzQwMDM3/a/NDg3MTAyNDI3NzQ0/details?hl=es)
 - [ ] Trabajo: [Una aplicación real de git submodules: revealjs](https://classroom.google.com/u/0/c/MzQ1NTIyMzQwMDM3/a/NTExNDc3NzU4MjY0/details?hl=es)
 ### Entornos de desarrollo
-- [ ] Práctica 5 - Tests
+- [x] Práctica 5 - Tests
 ### Base de datos
 - [ ] Repasar normalización
 ### Lenguaje de marcas

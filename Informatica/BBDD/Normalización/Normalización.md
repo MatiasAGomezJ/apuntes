@@ -71,9 +71,6 @@ $R(A1, A2, A3, A4, A5)$
 ### Clave/LLave candidata
 La clave candidata de una relación es una superclave C de la relacion que cumple que ningún subconjunto propio de C no es superclave.
 
-> Una superclave está compuesta de claves candidatas 
-> -Matias
-
 Nota(DNI, id_Asignatura, id_Nota, nota)
 - DNI, id_Asignatura: Posible superclave
 - id_Nota: Posible superclave
