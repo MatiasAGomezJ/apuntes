@@ -85,3 +85,8 @@ Si:
 { $Y$ } -> { $Z$ }
 Entonces:
 { $X$ } -> { $Z$ }
+
+### Otra regla del 2FN???
+Si un atributo no clave depende de manera parcial de la clave
+
+Un atributo no puede depender de manera parcial ni de la PK ni de una clave candidata.
