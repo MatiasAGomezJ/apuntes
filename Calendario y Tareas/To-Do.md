@@ -11,6 +11,8 @@
 - [x] Práctica 5 - Tests
 ### Base de datos
 - [ ] Repasar normalización
+  - [ ] PDF1
+  - [ ] PDF2
 ### Lenguaje de marcas
 - [ ] Mirar XPath
 ### Otros
