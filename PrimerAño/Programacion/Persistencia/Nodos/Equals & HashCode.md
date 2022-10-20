@@ -1,0 +1,1 @@
+Normalmete se escoge el id para comparar los objectos, pero si este es autogenerado puede causar problemas.

@@ -3,11 +3,11 @@ El concepto de **Máquina virtual** surge con el objetivo de facilitar el desarr
 
 La compilación consta de dos fases:
 - La primera parte del código fuente en un lenguaje intermedio obteniendo un programa equivalente con un menor nivel de abstracción que el original y que no puede ser directamente ejecutado.
-- La segunda fase traduce el lenguaje intermedio a un [[lenguaje máquina]].
+- La segunda fase traduce el lenguaje intermedio a un [[Lenguaje máquina]].
 
 El objetivo es que elcódigo de la  **primera fase**, el código intermedio, sea **común para cualquier procesador**, y que el código generado en la  **segunda fase** sea el  **específico para cada procesador **.
 
-La traducción del lenguaje intermedio al lenguaje máquina no se suele hacer mediante un [[compilador]] sino mediante un intérprete.
+La traducción del lenguaje intermedio al lenguaje máquina no se suele hacer mediante un [[Compilador]] sino mediante un intérprete.
 
 ![](https://i.imgur.com/wlgBHZq.png)
 ![](https://i.imgur.com/3XO7gha.png)

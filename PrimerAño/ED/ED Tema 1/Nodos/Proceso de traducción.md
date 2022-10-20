@@ -14,7 +14,7 @@ El proceso consta de varias partes:
 
 #### TL;DR[^1]
 
-El **[[código fuente]]** desarrollado por los programadores se convertirá en **código objeto** con la ayuda del **compilador**. Este ayudará a localizar los errores de sintaxis o de compilación que se encuentren en el código fuente. Con el **enlazador**, que recogerá el código objeto y las **librerías** generará el **código ejecutable**.
+El **[[Código fuente]]** desarrollado por los programadores se convertirá en **código objeto** con la ayuda del **compilador**. Este ayudará a localizar los errores de sintaxis o de compilación que se encuentren en el código fuente. Con el **enlazador**, que recogerá el código objeto y las **librerías** generará el **código ejecutable**.
 
 ![](https://i.imgur.com/eu038dg.png)
 

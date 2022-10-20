@@ -1,5 +1,5 @@
 # Compilador
-Un **compilador** es un [[programa]] que traduce el [[Código fuente]] de los archivos de un programa en ficheros en formato binario, [[lenguaje máquina]], que contienen las [[Órdenes]] en un formato con el procesador puede entender.
+Un **compilador** es un [[Programa]] que traduce el [[Código fuente]] de los archivos de un programa en ficheros en formato binario, [[Lenguaje máquina]], que contienen las [[Órdenes]] en un formato con el procesador puede entender.
 
 El compilador detectará los posibles errores del programa fuente para conseguir un programa ejecutable depurado.
 

@@ -33,6 +33,7 @@ Si tenemos que seguir trabajando con el objeto utilizar la referencia que nos de
 ## Segunda regla.
 El **PE** gestiona la persistencia de los objetos que contiene.
 
-Se ha hecho un find de on objeto, entonces esta **managed**. Si ahora modificamos su estado, automaticamente, sin hacer un merge ni nada. se 
+Se ha hecho un find de on objeto, entonces esta **managed**. Si ahora modificamos su estado, automaticamente, sin hacer un merge ni nada. se actualizará en la base de datos.
 
 Las sentencia SQL no se traducen a los métodos del entity manager.  
+![](https://i.imgur.com/ydHmOo3.png)
