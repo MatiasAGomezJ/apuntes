@@ -167,3 +167,92 @@ The specification of these methods does not require support for CSS3 selectors:
 
 ## 15.2.6 `document.all[]`
 Before the DOM was standardized, IE4 introduced the `document.all[]` collection all elements (but not Text nodes). Now obsolete and should not be used.
+
+# 15.3 Document Structure and Traversal
+
+## 15.3.1 Documents As Trees of Nodes
+Document object, its Element objects, and the Text objects are all Node Objects. Properties:
+- `parentNode`
+- `childNodes`: A read-only array-like object (a NodeList) that is a live representation of a Node’s child nodes.
+- `firstChild`, `lastChild`
+- `nextSibling`, `previousSibling`
+- `nodeType`. Document > 9. Element > 1. Text > 3. Comments > 8. Documents-fragments > 11 
+- `nodeName`. The tag name of an Element, uppercase.
+
+# 15.4 Attributes
+The attribute values of HTML elements are available as properties of the HTMLElement objects.
+
+## 15.4.1 HTML Attributes As Element Properties
+Read/write properties that mirror the HTML attributes of the elements.
+
+HTML attributes are not case sensitive, but JavaScript property names are. To convert
+an attribute name to the JavaScript property, write it in lowercase. Put the first letter of each word after the first in uppercase: `defaultChecked`.
+
+Some HTML attribute names are reserved words in JavaScript. Prefix the property name with “html”. Prefix the property name with “html”.
+
+Event handler attributes always have Function objects (or null) as their val-
+ues.
+
+## 15.4.2 Getting and Setting Non-HTML Attributes
+HTMLElement
+
+Element defines getAttribute() and setAttribute().
+
+```js
+
+var image = document.images[0];
+var width = parseInt(image.getAttribute("WIDTH"));
+image.setAttribute("class", "thumbnail");
+
+```
+
+Attribute values are all treated as strings. getAttribute() never returns a number, boolean, or object.
+
+Element also defines two related methods, hasAttribute() and removeAttribute().
+
+# 15.5 Element Content
+
+## 15.5.1 Element Content As HTML
+`innerHTML` property of an Element returns the content of that element as a string of markup.
+
+HTML5 also standardizes a property named outerHTML. When you query outerHTML,
+the string of HTML or XML markup that is returned includes the opening and closing
+tags of the element
+
+## 15.5.2 Element Content As Plain Text
+`textContent` property of Node:
+
+```js
+
+var para = document.getElementsByTagName("p")[0]; // First <p> in the document
+var text = para.textContent;
+// Text is "This is a simple document."
+para.textContent = "Hello World!"; // Alter paragraph content
+
+```
+
+# 15.9 HTML Forms
+Date from the very beginning of the Web and predate JavaScript itself. Mechanism behind the first generation of web applications, required no JavaScript at all. User input is gathered in form elements; form submission sends that input to the server; generates a new HTML
+page.
+
+With server-side programs, a form isn’t useful unless it has a Submit button. Server-side programs are based on form submissions. Client-side programs are event based, they respond to events on individual form elements.
+
+Forms are composed of HTML elements. Form elements were the first ones to be made scriptable, support some APIs that predate the DOM.
+
+Quick reference to the most commonly used form elements.
+
+| HTML element                                        | Type property     | Event handler | Description and events                                                             |
+| --------------------------------------------------- | ----------------- | ------------- | ---------------------------------------------------------------------------------- |
+| `<input type="button">` or `<button type="button">` | “button”          | onclick       | A push button                                                                      |
+| `<input type="checkbox">`                           | "checkbox"        | onchange      | -                                                                                  |
+| `<input type="file">`                               | “file”            | onchange      | An input field for entering the name of a file to upload to the web server;        |
+| `<input type="hidden">`                             | “hidden”          | none          | Data submitted with the form but not visible to the user                           |
+| `<option>`                                          | none              | none          | Event handlers are on the Select object, not on individual Option objects          |
+| `<input type="password">`                           | “password”        | onchange      | Typed characters are not visible                                                   |
+| `<input type="radio">`                              | “radio”           | onchange      | Radio button                                                                       |
+| `<input type="reset">` or `<button type="reset">`   | “reset”           | onclick       | Resets a form                                                                      |
+| `<select>`                                          | “select-one”      | onchange      | A list or drop-down menu from which one item may be selected (also see `<option>`) |
+| `<select multiple>`                                 | “select-multiple” | onchange      | A list from which multiple items may be selected (also see `<option>`)             |
+| `<input type="submit">` or `<button type="submit">` | “submit”          | onclick       | Submits a form                                                                     |
+| `<input type="text">`                               | “text”            | onchange      | -                                                                                  |
+| `<textarea>`                                        | “textarea”        | onchange      | A multiline text entry field                                                                                   |
