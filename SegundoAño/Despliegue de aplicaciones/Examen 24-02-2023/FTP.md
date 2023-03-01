@@ -129,7 +129,7 @@ Existen tres tipos de comandos FTP diferentes:
 
 # Códigos de respuesta de FTP
 Tres digitos
-- Primero. Exito (2yz), fracaso (4yz o 5yz) o no hay respuesta (1yz o 3yz).
+- Primero. Exito (2yz), no hay respuesta (4yz o 5yz) o fracaso (1yz o 3yz).
 - Segundo. Clase de error.
 	- 0z - Sintaxis. Estas respuestas se refieren a errores de sintaxis.
 	- x1z - Información. Las respuestas a las solicitudes de información.
