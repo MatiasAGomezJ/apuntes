@@ -30,4 +30,38 @@ Nombres de dominio puede estar formado caracteres separados por puntos. Case ins
 
 ## Dominio raíz. Dominios y subdominios.
 Raíz ->"." (root). Nombre nulo con 0 caracteres.
-Los subdominios que cuelgan de la raíz son los **dominios de primer nivel o TLD, Top Level Domains.**
+Los subdominios que cuelgan de la raíz son los **dominios de primer nivel o TLD, Top Level Domains.** A partir de ahí: segundo nivel, tercer nivel
+
+## Nombres relativos y absolutos. FQDN
+- Nombres relativos: Es necesario saber el dominio superior
+- Nombres absolutos: FQDN, Fully Qualified Domain Names. Punto al final ".".
+
+## Administración de nombres de dominio en Internet. Delegación
+ICANN (Internet Corporation for Assigned Names and Numbers).
+InterNIC es la organización asociada a la ICANN que permite registrar dominios TLD.
+
+## Dominios TLD y los operadores de registro (registry)
+ICCAN clasifica los dominios de nivel superior (TLD):
+- Genéricos. Nombre significativo en función del propósito u organización.
+	- Dominios patrocinados
+	- Entidad que soporta su patrocinio
+	- Dominios no patrocinados
+- Geográficos (ccTLDs, country code TLDs).
+	- Dos letras que identifica un país.
+	- Nombre definido por país destinado a tarea de gestión y políticas.
+- arpa
+	- infraestructura técnica de Internet bajo la dirección de la IAB (Internet Architecture Board).
+	- Se utiliza para la resolución inversa de IPs.
+- Dominios reservados.
+	- Nombres para pruebas privadas reservados para que no entren en conflicto.
+	- "test", "example", "invalid" y "localhost".
+
+
+## Delegación
+ICCAN se encarga de la raíz.
+Red.es se encarga de resolver dentro de "es.".
+Res.es es un **operador de registro**.
+
+## Registro de dominios. Agentes registradores (registrar)
+Reservar un nombre durante un tiempo. Un año.
+Los registradores registran nombres de segundo nivel.
